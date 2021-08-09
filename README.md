@@ -2,7 +2,7 @@
 
 This is the repository containing the cheatsheets, yaml manifests for CKAD & CKA exam. 
 
-This repo is focused on the following areas Kubernetes: 
+This repo is focused on the following areas of Kubernetes: 
 
  - Kubernetes installation steps using kubeadm tool
  - Kubernetes manifest on Pod design, workloads aka Deployments, ReplicaSets, StatefulSets, DaemonSets, jobs, Cronjobs, Probes etc. 
