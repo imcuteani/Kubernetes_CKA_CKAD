@@ -1,0 +1,2 @@
+NAME    READY   STATUS             RESTARTS   AGE
+mypod   0/1     ImagePullBackOff   0          4m13s

@@ -1,0 +1,51 @@
+Name:         mypod
+Namespace:    ckad-prep
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Mon, 09 Aug 2021 19:49:24 +0530
+Labels:       <none>
+Annotations:  <none>
+Status:       Pending
+IP:           172.17.0.16
+IPs:
+  IP:  172.17.0.16
+Containers:
+  mypod:
+    Container ID:   
+    Image:          nginx:2.3.5
+    Image ID:       
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-5v8nf (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-5v8nf:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                    From               Message
+  ----     ------     ----                   ----               -------
+  Normal   Scheduled  4m58s                  default-scheduler  Successfully assigned ckad-prep/mypod to minikube
+  Normal   Pulling    3m18s (x4 over 4m56s)  kubelet            Pulling image "nginx:2.3.5"
+  Warning  Failed     3m13s (x4 over 4m51s)  kubelet            Failed to pull image "nginx:2.3.5": rpc error: code = Unknown desc = Error response from daemon: manifest for nginx:2.3.5 not found: manifest unknown: manifest unknown
+  Warning  Failed     3m13s (x4 over 4m51s)  kubelet            Error: ErrImagePull
+  Warning  Failed     3m3s (x6 over 4m51s)   kubelet            Error: ImagePullBackOff
+  Normal   BackOff    2m52s (x7 over 4m51s)  kubelet            Back-off pulling image "nginx:2.3.5"
