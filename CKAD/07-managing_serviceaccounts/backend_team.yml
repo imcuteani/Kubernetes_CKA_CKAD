@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  creationTimestamp: "2021-08-10T08:34:34Z"
+  name: backend-team
+  namespace: default
+  resourceVersion: "29926"
+  uid: 1b8e64c9-e220-4d56-911a-bb28b040cffb
+secrets:
+- name: backend-team-token-qs5qg
