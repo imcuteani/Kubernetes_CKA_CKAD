@@ -1,0 +1,12 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata: 
+ namespace: kube-system
+ name: custom
+ annotations:
+         storageclass.beta.kubernetes.io/is-default-class: "false"
+ labels:
+  addonmanager.kubernetes.io/mode: Reconcile
+provisioner: k8s.io/minikube-hostpath
+
+
