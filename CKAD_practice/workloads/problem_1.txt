@@ -1,0 +1,1 @@
+1. Create a nginx pod  with nginx image=1.17.0.Create two replicas.  
